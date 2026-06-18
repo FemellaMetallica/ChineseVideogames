@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Chinese videogames</title>
+<title>Chinese Videogames</title>
 
 <style>
 body {
@@ -89,27 +89,20 @@ a:hover {
 <body>
 
 <header>
-    <h1>Museo de Videojuegos de Nuevo León</h1>
-    <p>Preservando nuestra historia y cultura del desarrollo de videojuegos</p>
+    <h1>Chinese Videogames</h1>
+    <p>Chinese Videogames</p>
 </header>
 
 <div class="container">
 
     <div class="card">
-        <h2>Sobre el proyecto</h2>
-        <p>
-            Este museo digital busca registrar y preservar información sobre todos los videojuegos, dibujantes, músicos y desarrolladores del estado de Nuevo León.
-        </p>
-    </div>
-
-    <div class="card">
         <details>
-            <summary style="font-size: 20px;">Personas</summary>
+            <summary style="font-size: 20px;">Game Creators</summary>
             <table id="tablaPersonas">
                 <tr>
-                    <th onclick="sortTable('tablaPersonas', 0)">Nombre</th>
-                    <th onclick="sortTable('tablaPersonas', 1)">Empresa</th>
-                    <th onclick="sortTable('tablaPersonas', 2)">Municipio</th>
+                    <th onclick="sortTable('tablaPersonas', 0)">Name</th>
+                    <th onclick="sortTable('tablaPersonas', 1)">Company</th>
+                    <th onclick="sortTable('tablaPersonas', 2)">Region</th>
                 </tr>
                 <tbody></tbody>
             </table>
@@ -118,13 +111,12 @@ a:hover {
 
     <div class="card">
         <details>
-            <summary style="font-size: 20px;">Videojuegos</summary>
+            <summary style="font-size: 20px;">Videogames</summary>
             <table id="tablaJuegos">
                 <tr>
-                    <th onclick="sortTable('tablaJuegos', 0)">Nombre</th>
-                    <th onclick="sortTable('tablaJuegos', 1)">Empresa</th>
-                    <th onclick="sortTable('tablaJuegos', 2)">Lanzamiento</th>
-                    <th onclick="sortTable('tablaJuegos', 3)">Jugable Aquí</th>
+                    <th onclick="sortTable('tablaJuegos', 0)">Name</th>
+                    <th onclick="sortTable('tablaJuegos', 1)">Company</th>
+                    <th onclick="sortTable('tablaJuegos', 2)">Released</th>
                 </tr>
                 <tbody></tbody>
             </table>
@@ -133,11 +125,11 @@ a:hover {
 
     <div class="card">
         <details>
-            <summary style="font-size: 20px;">Empresas</summary>
+            <summary style="font-size: 20px;">Companies</summary>
             <table id="tablaEmpresas">
                 <tr>
-                    <th onclick="sortTable('tablaEmpresas', 0)">Nombre</th>
-                    <th onclick="sortTable('tablaEmpresas', 1)">Fundación</th>
+                    <th onclick="sortTable('tablaEmpresas', 0)">Names</th>
+                    <th onclick="sortTable('tablaEmpresas', 1)">Year Founded</th>
                 </tr>
                 <tbody></tbody>
             </table>
@@ -145,11 +137,6 @@ a:hover {
     </div>
 
 </div>
-
-<header>
-    <p>Si deseas modificar o eliminar tu información, contáctame en Discord @al_saddiq</p>
-</header>
-
 
 <script>
 function sortTable(tableId, n) {
