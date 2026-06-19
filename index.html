@@ -114,10 +114,11 @@ a:hover {
             <summary style="font-size: 20px;">Videogames</summary>
             <table id="tablaJuegos">
                 <tr>
-                    <th onclick="sortTable('tablaJuegos', 0)">Name</th>
-                    <th onclick="sortTable('tablaJuegos', 1)">Developer</th>
-                    <th onclick="sortTable('tablaJuegos', 2)">Released</th>
-                    <th onclick="sortTable('tablaJuegos', 3)">Rating</th>
+                    <th onclick="sortTable('tablaJuegos', 0)">Original Name</th>
+                    <th onclick="sortTable('tablaJuegos', 1)">Localized Name</th>
+                    <th onclick="sortTable('tablaJuegos', 2)">Developer</th>
+                    <th onclick="sortTable('tablaJuegos', 3)">Released</th>
+                    <th onclick="sortTable('tablaJuegos', 4)">Rating</th>
                 </tr>
                 <tbody></tbody>
             </table>
@@ -187,7 +188,7 @@ let Personas = [
 ];
 
 let Juegos = [
-    {Nombre: "加纳战刃 (GanaBlade)", Link: "Videogames/???.html", Empresa: "Liao Kai", Lanzamiento: "???? / ?? / ??", Rating: 32},
+    {Nombre: "加纳战刃", LocName: "GanaBlade", Link: "Videogames/???.html", Empresa: "Liao Kai", Lanzamiento: "???? / ?? / ??", Rating: 32},
     {Nombre: "红蓝细胞 (Red Blue Cell)", Link: "Videogames/???.html", Empresa: "Liao Kai", Lanzamiento: "???? / ?? / ??", Rating: 30},
     {Nombre: "小魔女諾貝塔 (Little Witch Nobeta)", Link: "Videogames/???.html", Empresa: "Pupuya Games", Lanzamiento: "???? / ?? / ??", Rating: 28},
     {Nombre: "惑星戰士G (G Warrior)", Link: "Videogames/???.html", Empresa: "Liao Kai", Lanzamiento: "???? / ?? / ??", Rating: 27},
@@ -238,6 +239,7 @@ function renderTablas() {
         tablaJ.innerHTML += `
         <tr>
             <td><a href="${j.Link}">${j.Nombre}</a></td>
+            <td><a href="${j.Link}">${j.LocName}</a></td>
             <td>${j.Empresa}</td>
             <td>${j.Lanzamiento}</td>
             <td>${j.Rating}</td>
